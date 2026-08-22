@@ -15,6 +15,10 @@ public class FilaEncadeada {
     }
 
     public int dequeue(){
-        if (inicio == null)
+        if (inicio == null) throw new RuntimeException("Fila vazia");
+        int valor = inicio.valor;
+        inicio = inicio.prox;
+        if (inicio == null) fim = null;
+        return valor;
     }
 }
