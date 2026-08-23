@@ -47,7 +47,7 @@ public class FilaEncadeada {
         fila.enqueue("Batman");
         fila.enqueue("Mulher Maravilha");
         fila.mostrar();
-        System.out.println("Superman esta falando com: " + fila.dequeue());
+        System.out.println("Superman está falando com: " + fila.dequeue());
         fila.mostrar();
     }
 }

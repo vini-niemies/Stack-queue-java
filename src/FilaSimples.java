@@ -9,7 +9,7 @@ public class FilaSimples {
     }
     public void enqueue(int valor) {
         if (tamanho == pedidos.length) {
-            throw new RuntimeException("Fila cheia, nao da pra atender mais pedidos agora");
+            throw new RuntimeException("Fila cheia, não da pra atender mais pedidos agora");
         }
         pedidos[fim] = valor;
         fim++;
